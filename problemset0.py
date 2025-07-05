@@ -14,6 +14,6 @@ x = int(input("Enter a number:"))
 y = int(input("Enter another number: "))
 
 # PART 3 & 4
-print(x ** y)
-print(math.log(x,2))
+print("X**y = ", x ** y)
+print("log(x) =", math.log(x,2))
 
