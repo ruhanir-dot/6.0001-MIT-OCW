@@ -4,7 +4,7 @@ portion_saved = float(input("Enter the percent of your salary to save, as a deci
 total_cost = float(input("Enter the cost of your dream home:  "))
 
 # we are setting our base amounts that we know
-down_payment = 0.25 * total_cost
+portion_down_payment = 0.25 * total_cost
 current_savings = 0
 r = 0.04
 
@@ -16,10 +16,11 @@ month = 0
 # + the monthly salary's current savings
 # our loop breaks when current savings are greater than or equal to the amount needed for our down payment
 
-while (current_savings < down_payment):
+while (current_savings < portion_down_payment):
     current_savings = current_savings + (current_savings * r / 12)+ (monthly_salary * portion_saved)
     month += 1
 
+# Final Answer
 print("Number of months:", month )
 
 
